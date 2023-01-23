@@ -63,7 +63,7 @@
         [
             "cygwin-setup.exe",
             "Cygwin Setup",
-            "--no-admin --no-shortcuts --root \"$persist_dir\\root\" --local-package-dir \"$persist_dir\\packages\""
+            "--no-admin --no-shortcuts --root \"$persist_dir\\root\" --local-package-dir \"$persist_dir\\packages\" --site https://mirrors.tuna.tsinghua.edu.cn/cygwin/"
         ],
         [
             "root\\bin\\mintty.exe",
