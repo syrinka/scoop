@@ -53,6 +53,7 @@
         "keep": true
     },
     "pre_install": "persist_data @{persist = @('packages', 'root')} $original_dir $persist_dir",
+    "env_add_path": ["root/bin"],
     "shortcuts": [
         [
             "root\\Cygwin.bat",
