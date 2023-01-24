@@ -52,10 +52,9 @@
         ],
         "keep": true
     },
-    "depends": ["sudo"],
     "pre_install": [
         "persist_data @{persist = @('packages', 'root')} $original_dir $persist_dir",
-        "sudo New-Item -ItemType SymbolicLink -Path \"$persist_dir\\root\\home\\${env:USERNAME}\" -Target \"${env:USERPROFILE}\""
+        "New-Item -ItemType Junction -Path \"$persist_dir\\root\\home\\${env:USERNAME}\" -Target \"${env:USERPROFILE}\" -Force"
     ],
     "env_add_path": ["root/bin"],
     "shortcuts": [
