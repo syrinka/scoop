@@ -54,7 +54,7 @@
     },
     "pre_install": [
         "persist_data @{persist = @('packages', 'root')} $original_dir $persist_dir",
-        "New-Item -ItemType Junction -Path \"$persist_dir\\root\\home\\${env:USERNAME}\" -Target \"${env:USERPROFILE}\" -Force"
+        "New-Item -ItemType Junction -Path \"$persist_dir\\root\\home\\${env:USERNAME}\" -Value \"${env:USERPROFILE}\" -Force"
     ],
     "env_add_path": ["root/bin"],
     "shortcuts": [
