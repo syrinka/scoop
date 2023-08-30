@@ -20,4 +20,5 @@ Manifest | Description
 -- | --
 cygwin-alter | A fork of cygwin, made some minor changes:</br>use mirror to improve install speed in main land, link `/home/${env:username}` to `${env:userprofile}`
 mask | A special task runner, use markdown to define its recipe
-minify | light-weight minifier, HTML5, CSS3, JS, JSON, SVG and XML
+minify | Light-weight minifier, HTML5, CSS3, JS, JSON, SVG and XML
+spot | Ansible-like remote deployment tool
